@@ -4,7 +4,8 @@ import Link from 'next/link'
 const Footer = () => {
     return (
         <>
-            <footer className="text-blue-200 bg-slate-900 body-font bg-[radial-gradient(circle_at_top_right,_rgba(191,219,254,1)_-20%,_rgba(15,23,42,1)_40%)]">
+            <footer className="text-blue-200 body-font">
+                <div className="absolute w-full h-25 -z-20 bg-[radial-gradient(circle_at_top_right,_rgba(191,219,254,1)_-20%,_rgba(15,23,42,1)_40%)]"></div>
                 <div className="container px-10 py-8 mx-auto flex items-center sm:flex-row flex-col">
                     <a className=" flex title-font font-medium items-center md:justify-start justify-center">
                         <span className="ml-3 text-xl">Prithvi Bansal</span>

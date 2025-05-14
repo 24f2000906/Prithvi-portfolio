@@ -3,7 +3,7 @@ import React from 'react'
 const page = () => {
   return (
     <>
-      <div className="bg-slate-900 text-blue-100 md:p-20 p-5 flex flex-col md:flex-row md:justify-around justify-center relative">
+      <div className="bg-transparent text-blue-100 md:p-20 p-5 flex flex-col md:flex-row md:justify-around justify-center relative">
         <div className='h-full md:sticky top-0 about-box'>
           <h1 className='text-6xl font-semibold mb-5'>About me...</h1>
           <div className='slideshow md:mb-0 mb-5'>

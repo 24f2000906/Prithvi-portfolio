@@ -1,14 +1,19 @@
-import React from 'react'
+"use client"
+import React from 'react';
+import { motion } from "framer-motion";
 
 const page = () => {
   return (
     <>
-      <div className="bg-slate-900 justify-center">
-
-{/* SECTION - 1 */}
+      <div className="justify-center">
+        {/* SECTION - 1 */}
         <div className='md:flex justify-around md:px-20 py-20'>
           <div className="text-blue-200">
-            <h1 className='text-6xl font-semibold text-blue-50 m-5'>Hi, I'm Prithvi</h1>
+            <motion.h1
+              initial={{ x: -700 }}
+              animate={{ x: 0 }}
+              transition={{ duration: 0.4 }}
+              className='text-6xl font-semibold text-blue-50 m-5'>Hi, I'm Prithvi</motion.h1>
             <h2 className='text-4xl font-medium text-blue-500 m-5'>I am a developer</h2>
             <p className='text-lg flex text-blue-200 m-5'>I'm not anti-social, I'm just optimizing my code.</p>
             <div className='flex items-center md:justify-start justify-around text-2xl'>
@@ -33,12 +38,14 @@ const page = () => {
             </div>
           </div>
           <div className='flex justify-center mt-10 md:mt-0'>
-            <img className='rounded-full w-70 h-90' src="prithvi.jpg" alt="prithvi" />
+            <motion.img
+            rotate={{}}
+            className='rounded-full w-70 h-90' src="prithvi.jpg" alt="prithvi" />
           </div>
         </div>
 
-{/* SECTION - 2 */}
-        <div className='flex flex-wrap justify-around p-5 md:px-0'>
+        {/* SECTION - 2 */}
+        <div className='flex flex-wrap justify-around p-5 pb-10 md:px-0'>
           <div className="flex items-center mb-5">
             <span className="text-blue-500 text-5xl font-bold">1+</span>
             <span className="text-white text-md mt-1">Years of<br />Experience</span>
@@ -47,11 +54,11 @@ const page = () => {
             <span className="text-blue-500 text-5xl font-bold">10+</span>
             <span className="text-white text-md mt-1">Technical<br />Skills</span>
           </div>
-          <div className="flex items-center mb-10">
+          <div className="flex items-center mb-5">
             <span className="text-blue-500 text-5xl font-bold">5+</span>
             <span className="text-white text-md mt-1">Projects<br />Completed</span>
           </div>
-          <div className="flex items-center mb-10">
+          <div className="flex items-center mb-5">
             <span className="text-blue-500 text-5xl font-bold">8+</span>
             <span className="text-white text-md mt-1">Satisfied<br />Clients</span>
           </div>

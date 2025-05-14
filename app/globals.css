@@ -91,3 +91,24 @@ body {
         opacity: 0;
     }
 }
+
+@layer utilities {
+    .bg-dot-pattern {
+        background-image: radial-gradient( rgb(191,219,254) 1px, transparent 1px);
+        background-size: 40px 40px;
+    }
+
+    @keyframes dot-move {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        100% {
+            transform: translate(-40px, -40px);
+        }
+    }
+
+    .animate-dot-move {
+        animation: dot-move 10s linear infinite;
+    }
+}

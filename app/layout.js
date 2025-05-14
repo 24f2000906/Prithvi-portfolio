@@ -1,6 +1,10 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";
+import DotBg from "@/components/DotBg";
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 export const metadata = {
   title: "Prithvi",
@@ -9,10 +13,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="">
       <body
-        className={`antialiased`}
+        className={`antialiased relative bg-slate-900`} 
       >
+        <DotBg />
         <Navbar/>
         {children}
         <Footer/>
