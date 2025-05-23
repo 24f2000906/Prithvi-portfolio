@@ -75,10 +75,10 @@ const page = () => {
               </li>
               <li className='flex justify-between'>
                 <div>
-                  <h3 className='font-semibold text-2xl'>IIT Kanpur</h3>
-                  <p className=''>Web Development | 2023</p>
+                  <h3 className='font-semibold text-2xl'>Youtube</h3>
+                  <p className=''>Web Development | 2024</p>
                 </div>
-                <img src="IITK_logo.png" className='w-15 h-15 rounded-full' />
+                <img src="youtube.png" className='w-15 h-15 rounded-full' />
               </li>
             </ul>
           </div>
