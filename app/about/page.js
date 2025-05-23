@@ -18,10 +18,10 @@ const page = () => {
           <div className="bg-slate-900 animate__animated animate__flipInX h-full md:h-75 md:w-120 w-full rounded-2xl mb-7 overflow-scroll text-blue-200 about-card-shadow">
             <h2 className='text-slate-900 text-4xl sticky top-0 text-center font-semibold p-2 bg-blue-200'>Introduction</h2>
             <ul className='text-lg p-4 mx-5 list-disc flex flex-col gap-5'>
-              <li>I am a Full-stack web developer specialized in the MERN stack, with experience in building dynamic and scalable web applications.</li>
-              <li>I'm passionate about backend and frontend development, API integration and performance optimization.</li>
+              <li>I am a Full-stack web developer specialized in MERN stack along with Next.js, with experience in building dynamic and scalable web applications.</li>
+              <li>Proficient in both backend and frontend development, API integration, SEO and performance optimization.</li>
               <li>I'm currently expanding knowledge in data science while leveraging strong mathematical skills</li>
-              <li>I'm also familiar with basic ethical hacking and cybersecurity principles.</li>
+              <li>I'm also familiar with basic ethical hacking and cyber security principles.</li>
             </ul>
           </div>
           <div className="bg-slate-900 animate__animated animate__flipInX h-full md:h-75 md:w-120 w-full rounded-2xl mb-7 overflow-scroll text-blue-200 about-card-shadow">
@@ -43,7 +43,7 @@ const page = () => {
                 { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
                 { name: "Linux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" },
                 { name: "C", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" },
-                // { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" },
+                { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" },
                 // { name: "Vue.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" },
                 // { name: "", icon: "" },
                 // { name: "", icon: "" },

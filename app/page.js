@@ -85,7 +85,7 @@ const page = () => {
             <span className="text-white text-md mt-1">Projects<br />Completed</span>
           </div>
           <div className="flex items-center mb-5">
-            <span className="text-blue-500 text-5xl font-bold">8+</span>
+            <span className="text-blue-500 text-5xl font-bold">3+</span>
             <span className="text-white text-md mt-1">Satisfied<br />Clients</span>
           </div>
         </div>
