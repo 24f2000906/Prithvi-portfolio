@@ -38,14 +38,13 @@ const page = () => {
 
   return (
     <>
-      <div className="md:flex md:flex-row flex-col bg-transparent text-blue-100 md:p-20 p-5 pb-10 md:justify-around justify-center">
+      <div className="flex flex-wrap gap-4 bg-transparent text-blue-100 md:p-20 p-5 pb-10 justify-around">
         <div className='flex flex-col items-center'>
-          <h1 className="text-6xl font-semibold">Got a Message?</h1>
-          <img className='md:w-100 w-full h-auto mt-12 md:mb-0 mb-10 rounded-4xl' src="message.png" alt="" />
-          {/* <div className="w-100 h-100 mt-12 rounded-4xl absolute shadow-2xs border-2 shadow-red-500"></div> */}
+          <h1 className="text-6xl font-semibold animate__animated animate__jackInTheBox">Got a Message?</h1>
+          <img className='md:w-100 w-full h-auto mt-12 md:mb-0 rounded-4xl animate__animated animate__fadeInUpBig' src="message.png" alt="" />
         </div>
-        <div className=" md:w-100 w-full h-auto bg-gray-800 rounded-4xl md:mx-0 mx-auto p-5 overflow-hidden">
-          <form onSubmit={handleSubmit(sendMessage)} className="flex flex-col overflow-hidden">
+        <div className=" md:w-100 w-full h-auto animate__animated animate__fadeInRight bg-gray-800 rounded-4xl md:mx-0 mx-auto p-5 ">
+          <form onSubmit={handleSubmit(sendMessage)} className="flex flex-col">
             <label className='text-xl mx-2 my-1' htmlFor="name">NAME</label>
             <input type="text" {...register("name", { required: true })} placeholder='your name' className='w-full bg-blue-100 text-blue-950 rounded-full p-3 text-center text-lg focus:outline-none mb-4' />
             {errors.name && <span className='font-12 red'>{errors.name.message}</span>}

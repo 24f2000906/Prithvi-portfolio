@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="absolute w-full h-30 -z-20 bg-[radial-gradient(circle_at_top_left,_rgba(191,219,254,1)_-20%,_rgba(15,23,42,1)_40%)]"></div>
+      <div className="absolute w-full h-29.5 -z-20 bg-[radial-gradient(circle_at_top_left,_rgba(191,219,254,1)_-20%,_rgba(15,23,42,1)_40%)]"></div>
       <nav className="md:flex md:justify-between px-4 md:px-15 text-blue-200">
         <div className="flex justify-between items-center">
           <Link href="/">
