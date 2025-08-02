@@ -15,7 +15,7 @@ const page = () => {
           </div>
         </div>
         <div>
-          <div className="bg-slate-900 animate__animated animate__flipInX h-full md:h-75 md:w-120 w-full rounded-2xl mb-7 overflow-scroll text-blue-200 about-card-shadow">
+          <div className="bg-slate-900 animate__animated animate__flipInX h-auto md:w-120 w-full rounded-2xl mb-7 overflow-scroll text-blue-200 about-card-shadow">
             <h2 className='text-slate-900 text-4xl sticky top-0 text-center font-semibold p-2 bg-blue-200'>Introduction</h2>
             <ul className='text-lg p-4 mx-5 list-disc flex flex-col gap-5'>
               <li>I am a Full-stack web developer specialized in MERN stack along with Next.js, with experience in building dynamic and scalable web applications.</li>
@@ -24,16 +24,18 @@ const page = () => {
               <li>I'm also familiar with basic ethical hacking and cyber security principles.</li>
             </ul>
           </div>
-          <div className="bg-slate-900 animate__animated animate__flipInX h-full md:h-75 md:w-120 w-full rounded-2xl mb-7 overflow-scroll text-blue-200 about-card-shadow">
+          <div className="bg-slate-900 animate__animated animate__flipInX h-auto md:w-120 w-full rounded-2xl mb-7 overflow-scroll text-blue-200 about-card-shadow">
             <h2 className='text-slate-900 text-4xl sticky top-0 text-center font-semibold p-2 bg-blue-200'>Tech Stack & Tools</h2>
             <div className="p-4 grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-5 place-items-center">
               {[
                 { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
-                { name: "Javascript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
                 { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+                { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" },
                 { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
                 { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
                 { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+                { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" },
+                { name: "Javascript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
                 { name: "CSS3", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" },
                 { name: "Tailwind CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" },
                 { name: "HTML5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" },
@@ -43,9 +45,7 @@ const page = () => {
                 { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
                 { name: "Linux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" },
                 { name: "C", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" },
-                { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" },
                 // { name: "Vue.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" },
-                // { name: "", icon: "" },
                 // { name: "", icon: "" },
                 // { name: "", icon: "" },
               ].map((tech, index) => (
@@ -56,7 +56,7 @@ const page = () => {
               ))}
             </div>
           </div>
-          <div className="bg-slate-900 animate__animated animate__flipInX h-full md:h-75 md:w-120 w-full rounded-2xl mb-7 md:overflow-hidden overflow-scroll text-blue-200 about-card-shadow">
+          <div className="bg-slate-900 animate__animated animate__flipInX h-auto md:w-120 w-full rounded-2xl mb-7 overflow-scroll text-blue-200 about-card-shadow">
             <h2 className='text-slate-900 text-4xl sticky top-0 text-center font-semibold p-2 bg-blue-200'>Education</h2>
             <ul className='text-lg p-4 mx-5 list-disc flex flex-col gap-5'>
               <li className='flex justify-between'>
@@ -69,6 +69,7 @@ const page = () => {
               <li className='flex justify-between'>
                 <div>
                   <h3 className='font-semibold text-2xl'>IIT Roorkee</h3>
+                  <p className=''>Quantum Computing | 2025</p>
                   <p className=''>Basics of Ethical Hacking | 2024</p>
                 </div>
                 <img src="IITR_logo.png" className='w-15 h-15 rounded-full' />
@@ -82,16 +83,17 @@ const page = () => {
               </li>
             </ul>
           </div>
-          <div className="bg-slate-900 animate__animated animate__flipInX h-full md:h-75 md:w-120 w-full rounded-2xl mb-7 overflow-scroll text-blue-200 about-card-shadow">
+          <div className="bg-slate-900 animate__animated animate__flipInX h-auto md:w-120 w-full rounded-2xl mb-7 overflow-scroll text-blue-200 about-card-shadow">
             <h2 className='text-slate-900 text-4xl sticky top-0 text-center font-semibold p-2 bg-blue-200'>Skills</h2>
-            <ul className='text-lg p-4 mx-5 list-disc flex flex-col gap-5'>
-              <li>Interactive UI/UX Design</li>
-              <li>Search Engine Optimisation</li>
-              <li>Data Structures and Algorithms</li>
+            <ul className='text-lg p-4 mx-5 list-disc flex flex-col gap-3'>
+              <li>Search Engine Optimization</li>
+              <li>Project Management</li>
               <li>Problem Solving</li>
-              <li>Fast Learner & Adaptable</li>
-              <li>Leadership</li>
               <li>Teamwork</li>
+              <li>Time Management</li>
+              <li>Leadership</li>
+              <li>Effective Communication</li>
+              <li>Critical Thinking</li>
             </ul>
           </div>
         </div>

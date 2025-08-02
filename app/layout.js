@@ -7,9 +7,48 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 export const metadata = {
-  title: "Prithvi",
-  description: "Prithvi Bansal Portfolio",
+  title: "Prithvi Bansal | Data Scientist | Developer ",
+  description: "Portfolio of Prithvi Bansal, a Data Scientist and full-stack developer specializing in Python, Flask, React, Next.js, Node.js, and UI/UX design. Contact for freelance or full-time opportunities.",
+  keywords: [
+    "Prithvi Bansal",
+    "Portfolio",
+    "Data Scientist",
+    "Full-Stack Developer",
+    "React Developer",
+    "Next.js",
+    "Machine Learning",
+    "Web Developer",
+    "Frontend Developer",
+    "Backend Developer",
+    "UI/UX Designer"
+  ],
+  authors: [{ name: "Prithvi Bansal", url: "https://prithvi-bansal.vercel.app" }],
+  creator: "Prithvi Bansal",
+  openGraph: {
+    title: "Prithvi Bansal | Data Scientist | Full-Stack Developer",
+    description: "Explore my projects, achievements and contact details.",
+    url: "https://prithvi-bansal.vercel.app",
+    siteName: "Prithvi Bansal Portfolio",
+    images: [
+      {
+        url: "/prithvi.jpg",
+        width: 930,
+        height: 1240,
+        alt: "Prithvi Bansal Preview Image",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Prithvi Bansal | Data Scientist | Full-Stack Developer",
+    description: "Explore my portfolio website.",
+    images: ["/prithvi.jpg"],
+  },
+  metadataBase: new URL("https://prithvi-bansal.vercel.app"),
 };
+
 
 export default function RootLayout({ children }) {
   return (

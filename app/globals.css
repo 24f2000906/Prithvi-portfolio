@@ -35,7 +35,6 @@ body {
 
 .slideshow {
     width: 300px;
-    /* Adjust as per your image size */
     height: 400px;
     overflow: hidden;
     position: relative;

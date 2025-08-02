@@ -66,7 +66,7 @@ const page = () => {
               placeholder="Type your message..."
               rows="4"
             />
-            <input type="submit" value="Send Message" className='w-full p-3 rounded-4xl text-xl font-semibold bg-blue-100 text-blue-950 mb-4 cursor-pointer transition-5' />
+            <input type="submit" value="Send Message" className='w-full p-3 rounded-4xl text-xl font-semibold bg-blue-100 text-blue-950 mb-4 cursor-pointer transform hover:scale-110 duration-300' />
           </form>
         </div>
       </div>
