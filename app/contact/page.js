@@ -37,13 +37,12 @@ const page = () => {
   }
 
   return (
-    <>
-      <div className="flex flex-wrap gap-4 bg-transparent text-blue-100 md:p-20 p-5 pb-10 justify-around">
+      <main className="flex flex-wrap gap-4 bg-transparent text-blue-100 md:p-20 p-5 pb-10 justify-around">
         <div className='flex flex-col items-center'>
           <h1 className="text-6xl font-semibold animate__animated animate__jackInTheBox">Got a Message?</h1>
           <img className='md:w-100 w-full h-auto mt-12 md:mb-0 rounded-4xl animate__animated animate__fadeInUpBig' src="message.png" alt="" />
         </div>
-        <div className=" md:w-100 w-full h-auto animate__animated animate__fadeInRight bg-gray-800 rounded-4xl md:mx-0 mx-auto p-5 ">
+        <div className=" md:w-100 w-full animate__animated animate__fadeInRight bg-gray-800 rounded-4xl md:mx-0 mx-auto p-5 ">
           <form onSubmit={handleSubmit(sendMessage)} className="flex flex-col">
             <label className='text-xl mx-2 my-1' htmlFor="name">NAME</label>
             <input type="text" {...register("name", { required: true })} placeholder='your name' className='w-full bg-blue-100 text-blue-950 rounded-full p-3 text-center text-lg focus:outline-none mb-4' />
@@ -69,8 +68,7 @@ const page = () => {
             <input type="submit" value="Send Message" className='w-full p-3 rounded-4xl text-xl font-semibold bg-blue-100 text-blue-950 mb-4 cursor-pointer transform hover:scale-110 duration-300' />
           </form>
         </div>
-      </div>
-    </>
+      </main>
   )
 }
 

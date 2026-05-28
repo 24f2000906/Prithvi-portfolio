@@ -22,8 +22,8 @@ export default function Navbar() {
         </div>
         {/* Mobile Menu */}
         <ul
-          className={`md:flex md:gap-10 md:relative absolute top-0 md:left-auto left-0 md:w-auto w-full
-           bg-slate-900/50 backdrop-blur-xl md:bg-transparent md:backdrop-blur-none text-lg font-semibold p-4 md:p-0 flex flex-col z-100 md:flex-row
+          className={`md:flex md:gap-10 md:relative absolute top-0 md:left-auto left-0 md:w-auto w-full shadow-slate-950 shadow-lg md:shadow-none
+           bg-slate-900/80 backdrop-blur-xl md:bg-transparent md:backdrop-blur-none text-lg font-semibold p-4 md:p-0 flex flex-col z-100 md:flex-row
            items-center ${(!menu) ? "hidden" : "block"}`}>
           {/* Cross */}
           <button className={`md:hidden cursor-pointer absolute right-0 top-0 m-4`} onClick={() => setMenu(false)}>
@@ -31,7 +31,7 @@ export default function Navbar() {
           </button>
           <li><Link onClick={() => setMenu(false)} href="/" className={`block p-2 transform duration-300 hover:scale-150 ${(pathname === '/') ? 'scale-150 underline' : ''}`}>Home</Link></li>
           <li><Link onClick={() => setMenu(false)} href="/about" className={`block p-2 transform duration-300 hover:scale-150 ${(pathname === '/about') ? 'scale-150 underline' : ''}`}>About</Link></li>
-          <li><Link onClick={() => setMenu(false)} href="/work" className={`block p-2 transform duration-300 hover:scale-150 ${(pathname === '/work') ? 'scale-150 underline' : ''}`}>Work</Link></li>
+          <li><Link onClick={() => setMenu(false)} href="/projects" className={`block p-2 transform duration-300 hover:scale-150 ${(pathname === '/projects') ? 'scale-150 underline' : ''}`}>Projects</Link></li>
           <li><Link onClick={() => setMenu(false)} href="/contact" className={`block p-2 transform duration-300 hover:scale-150 ${(pathname === '/contact') ? 'scale-150 underline' : ''}`}>Contact</Link></li>
         </ul>
       </nav>

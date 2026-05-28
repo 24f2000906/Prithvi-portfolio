@@ -58,6 +58,7 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <meta name="google-site-verification" content="6YQZysxFJAPb0IDzmZZe5QCqrXwirIe-sqfCtCN2IEs" />
       </head>
       <body
         className={`antialiased relative bg-slate-900`}
